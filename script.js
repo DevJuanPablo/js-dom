@@ -11,17 +11,14 @@ bodyChildren[1].children[0].innerText = route
 console.log(document.styleSheets[0])
 document.styleSheets[0].cssRules[0].style.backgroundColor = 'skyblue'
 
-let flag = true
 
 const animation = () => {
 
-  if (flag) {
-    document.body.style.backgroundColor = 'skyblue'
-  } else {
+  if (document.body.style.backgroundColor === 'skyblue') {
     document.body.style.backgroundColor = 'tomato'
+  } else {
+    document.body.style.backgroundColor = 'skyblue'
   }
-
-  flag = !flag
 }
 
 setInterval(animation, 1000)
