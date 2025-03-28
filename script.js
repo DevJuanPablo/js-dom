@@ -6,3 +6,5 @@ const route = document.location.href
 
 bodyChildren[0].innerText = 'Texto Nuevo'
 bodyChildren[1].children[0].innerText = route
+
+document.body.style.backgroundColor = 'tomato'
