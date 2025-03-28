@@ -1,7 +1,2 @@
-function saludar(texto) {
-  alert(texto)
-  console.log(texto)
-  console.log(document)
-}
-
-saludar('Hola EDteam')
+console.log(document.body.innerHTML)
+console.log(document.body.innerText)
