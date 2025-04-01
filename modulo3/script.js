@@ -1,14 +1,13 @@
 const inputUsuario = document.getElementById('username')
-inputUsuario.onclick = clickMouse
-inputUsuario.onmouseover = overMouse
-
-function clickMouse() {
+inputUsuario.addEventListener('click', () => {
   const arts = document.getElementById('formulario')
   const p = document.createElement('p')
   p.innerHTML = "Esto fue agregado al hacer click"
 
   arts.appendChild(p)
-}
+})
+
+inputUsuario.addEventListener('mouseover', overMouse)
 
 function overMouse() {
   const arts = document.getElementById('formulario')
