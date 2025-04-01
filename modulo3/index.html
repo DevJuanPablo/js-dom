@@ -8,7 +8,7 @@
 <body>
   <h1>Galería de Artículos</h1>
 
-  <div class="articulos" id="arts" onclick="saludar()">
+  <div class="articulos" id="arts" onmouseenter="saludar()">
     <article id="art-1" class="">
       <h2>Título del Artículo 1</h2>
       <p class="article-description">Descripción breve del artículo 1. Este es un resumen que da una idea del contenido del artículo.</p>
@@ -31,4 +31,10 @@
 
   <script src="script.js"></script>
 </body>
+  <style>
+    .articulos {
+      background: #eee;
+      border: 1px solid saddlebrown;
+    }
+  </style>
 </html>
