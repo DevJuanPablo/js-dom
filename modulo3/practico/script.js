@@ -9,5 +9,9 @@ const menu = document.getElementById('main-menu')
 const flecha = document.getElementById('flecha')
 
 flecha.addEventListener('click', () => {
-  menu.classList.add('hide')
+  if (menu.classList.contains('hide')) {
+    menu.classList.remove('hide')
+  } else {
+    menu.classList.add('hide')
+  }
 })
