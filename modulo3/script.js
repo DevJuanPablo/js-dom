@@ -15,4 +15,6 @@ function overMouse() {
   p.innerHTML = "El mouse ha pasado por encima"
 
   arts.appendChild(p)
+  
+  inputUsuario.removeEventListener('mouseover', overMouse)
 }
