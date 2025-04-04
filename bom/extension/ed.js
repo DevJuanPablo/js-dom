@@ -4,4 +4,18 @@ function hideElement(ev) {
   element.style.display = 'none'
 }
 
+function addBorder(ev) {
+  const element = ev.target
+
+  element.style.border = '2px solid tomato'
+}
+
+function removeBorder(ev) {
+  const element = ev.target
+
+  element.style.border = ''
+}
+
 document.body.addEventListener('click', hideElement)
+document.body.addEventListener('mouseover', addBorder)
+document.body.addEventListener('mouseout', removeBorder)
